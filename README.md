@@ -1,7 +1,7 @@
 Gilded Rose Refactoring Challenge
 =================================
 
-This is a Java refactoring challenge that job candidates applying for a Java developer position at <company> have to take and pass.
+This is a Java refactoring challenge that job candidates applying for a Java developer position at >company< have to take and pass.
 
 The candidate should work on it for one hour while we are watching and having a conversation with the candidate about all the things
 he is doing and he is maybe thinking. The candidate should feel more like having a Pair Programming session than taking a coding challenge.
