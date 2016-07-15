@@ -6,12 +6,10 @@ public abstract class AbstractItem {
 
     private static final int DEFAULT_MAX_QUALITY = 50;
 
-    private final String name;
     protected int sellIn;
     protected int quality;
 
     public AbstractItem(Item item) {
-        name = item.name;
         sellIn = item.sellIn;
         quality = item.quality;
     }
