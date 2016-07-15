@@ -6,7 +6,7 @@ import com.sevenlist.gildedrose.inheritance.item.UnboxedItem;
 import java.util.Collections;
 import java.util.List;
 
-class GildedRose {
+public class GildedRose {
 
     private List<UnboxedItem> unboxedItems;
 
