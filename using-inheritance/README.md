@@ -8,5 +8,6 @@ Some disadvantages:
 * inheritance with tight coupling - not nice
 * logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
 * code structure eventually only scales limited when adding new item types
+* item names are not yet constants/enums
 * method GildedRose.getUnboxedItems() in production code exists only for testing purposes
 * naming of test methods is not perfect/consistent
