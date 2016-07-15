@@ -81,7 +81,7 @@ public class GildedRoseTest {
         gildedRose.updateQuality();
 
         // then
-        UnboxedItem unboxedItem = gildedRose.getItems().get(0);
+        UnboxedItem unboxedItem = gildedRose.getUnboxedItems().get(0);
         assertThat(unboxedItem.getSellIn()).isEqualTo(newSellIn);
         assertThat(unboxedItem.getQuality()).isEqualTo(newQuality);
     }

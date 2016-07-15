@@ -8,17 +8,17 @@ import java.util.List;
 
 class GildedRose {
 
-    private List<UnboxedItem> items;
+    private List<UnboxedItem> unboxedItems;
 
-    public GildedRose(Item[] items) {
-        this.items = new ItemsReceipt().unboxItems(items);
+    public GildedRose(Item[] boxedItems) {
+        unboxedItems = new ItemsReceipt().unboxItems(boxedItems);
     }
 
     public void updateQuality() {
-        items.forEach(item -> item.updateSellInAndQuality());
+        unboxedItems.forEach(item -> item.updateSellInAndQuality());
     }
 
-    public List<UnboxedItem> getItems() {
-        return Collections.unmodifiableList(items);
+    public List<UnboxedItem> getUnboxedItems() {
+        return Collections.unmodifiableList(unboxedItems);
     }
 }
