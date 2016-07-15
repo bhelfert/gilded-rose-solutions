@@ -5,6 +5,7 @@ import com.sevenlist.gildedrose.inheritance.Item;
 public abstract class UnboxedItem {
 
     private static final int DEFAULT_MAX_QUALITY = 50;
+    private static final int LOWEST_SELL_IN_VALUE_BEFORE_EXPIRATION = 0;
 
     protected int sellIn;
     protected int quality;
@@ -49,6 +50,6 @@ public abstract class UnboxedItem {
     }
 
     protected final boolean hasPassedSellIn() {
-        return sellIn < 0;
+        return sellIn < LOWEST_SELL_IN_VALUE_BEFORE_EXPIRATION;
     }
 }
