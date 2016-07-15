@@ -30,6 +30,6 @@
     </dependencies>
 
     <modules>
-        <module>first-step-using-inheritance</module>
+        <module>using-inheritance</module>
     </modules>
 </project>
