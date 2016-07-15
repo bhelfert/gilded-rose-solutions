@@ -6,7 +6,7 @@ Advantages of this solution:
 
 Some disadvantages:
 * inheritance with tight coupling - not nice
-* scattered logic across inheritance hierarchy / item types --> unbalanced
+* logic scattered across inheritance hierarchy / item types --> unbalanced
 * code structure eventually only scales limited when adding new item types
 * one single test case (GildedRoseTest) instead of test cases per item type
 * method GildedRose.getItems() in production code exists only for testing purposes
