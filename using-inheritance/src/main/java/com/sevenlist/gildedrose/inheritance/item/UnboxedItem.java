@@ -14,7 +14,20 @@ public abstract class UnboxedItem {
         quality = item.quality;
     }
 
-    public abstract void updateSellInAndQuality();
+    public final void updateSellInAndQuality() {
+        updateSellIn();
+        updateQuality();
+    }
+
+    protected void updateSellIn() {
+        decreaseSellIn();
+    }
+
+    private void decreaseSellIn() {
+        sellIn--;
+    }
+
+    protected abstract void updateQuality();
 
     public final int getSellIn() {
         return sellIn;
@@ -22,10 +35,6 @@ public abstract class UnboxedItem {
 
     public final int getQuality() {
         return quality;
-    }
-
-    protected final void decreaseSellIn() {
-        sellIn--;
     }
 
     protected final void increaseQuality() {

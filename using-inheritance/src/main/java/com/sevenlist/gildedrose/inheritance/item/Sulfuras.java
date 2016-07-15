@@ -8,7 +8,13 @@ public class Sulfuras extends UnboxedItem {
         super(item);
     }
 
-    public void updateSellInAndQuality() {
-        // will never be sold and never decreases in quality
+    @Override
+    protected void updateSellIn() {
+        // will never be sold
+    }
+
+    @Override
+    protected void updateQuality() {
+        // will never decreases in quality
     }
 }

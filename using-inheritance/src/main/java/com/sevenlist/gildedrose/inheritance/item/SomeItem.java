@@ -10,8 +10,8 @@ public class SomeItem extends UnboxedItem {
         super(item);
     }
 
-    public void updateSellInAndQuality() {
-        decreaseSellIn();
+    @Override
+    protected void updateQuality() {
         decreaseQuality();
         if (hasPassedSellIn()) {
             decreaseQuality();

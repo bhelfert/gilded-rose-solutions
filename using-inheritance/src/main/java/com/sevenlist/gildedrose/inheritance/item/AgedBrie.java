@@ -8,8 +8,8 @@ public class AgedBrie extends UnboxedItem {
         super(item);
     }
 
-    public void updateSellInAndQuality() {
-        decreaseSellIn();
+    @Override
+    protected void updateQuality() {
         increaseQuality();
         if (hasPassedSellIn()) {
             increaseQuality();

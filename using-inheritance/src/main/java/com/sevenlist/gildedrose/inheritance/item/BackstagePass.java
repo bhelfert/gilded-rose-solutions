@@ -11,8 +11,8 @@ public class BackstagePass extends UnboxedItem {
         super(item);
     }
 
-    public void updateSellInAndQuality() {
-        decreaseSellIn();
+    @Override
+    protected void updateQuality() {
         if (hasPassedSellIn()) {
             makeWorthless();
             return;
