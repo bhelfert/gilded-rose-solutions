@@ -6,8 +6,8 @@ public class SomeItem extends UnboxedItem {
 
     private static final int DEFAULT_MIN_QUALITY = 0;
 
-    public SomeItem(Item item) {
-        super(item);
+    public SomeItem(Item boxedItem) {
+        super(boxedItem);
     }
 
     @Override

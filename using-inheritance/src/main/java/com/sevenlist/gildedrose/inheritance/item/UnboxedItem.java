@@ -10,9 +10,9 @@ public abstract class UnboxedItem {
     protected int sellIn;
     protected int quality;
 
-    public UnboxedItem(Item item) {
-        sellIn = item.sellIn;
-        quality = item.quality;
+    public UnboxedItem(Item boxedItem) {
+        sellIn = boxedItem.sellIn;
+        quality = boxedItem.quality;
     }
 
     public final void updateSellInAndQuality() {

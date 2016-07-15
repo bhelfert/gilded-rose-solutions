@@ -4,8 +4,8 @@ import com.sevenlist.gildedrose.inheritance.Item;
 
 public class Sulfuras extends UnboxedItem {
 
-    public Sulfuras(Item item) {
-        super(item);
+    public Sulfuras(Item boxedItem) {
+        super(boxedItem);
     }
 
     @Override

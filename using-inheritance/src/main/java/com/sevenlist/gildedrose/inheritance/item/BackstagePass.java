@@ -7,8 +7,8 @@ public class BackstagePass extends UnboxedItem {
     private static final int SIX_DAYS = 6;
     private static final int ELEVEN_DAYS = 11;
 
-    public BackstagePass(Item item) {
-        super(item);
+    public BackstagePass(Item boxedItem) {
+        super(boxedItem);
     }
 
     @Override

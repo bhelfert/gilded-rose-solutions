@@ -4,8 +4,8 @@ import com.sevenlist.gildedrose.inheritance.Item;
 
 public class AgedBrie extends UnboxedItem {
 
-    public AgedBrie(Item item) {
-        super(item);
+    public AgedBrie(Item boxedItem) {
+        super(boxedItem);
     }
 
     @Override
