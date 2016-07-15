@@ -1,6 +1,6 @@
-package com.sevenlist.gildedrose;
+package com.sevenlist.gildedrose.inheritance;
 
-import com.sevenlist.gildedrose.item.UnboxedItem;
+import com.sevenlist.gildedrose.inheritance.item.UnboxedItem;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.*;

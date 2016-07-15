@@ -1,6 +1,7 @@
-package com.sevenlist.gildedrose.item;
+package com.sevenlist.gildedrose.inheritance.item;
 
-import com.sevenlist.gildedrose.Item;
+import com.sevenlist.gildedrose.inheritance.Item;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class ItemsReceiptTest {
         List<UnboxedItem> unboxedItems = new ItemsReceipt().unboxItems(boxedItems);
 
         // then
-        assertThat(unboxedItems).hasSize(4);
+        Assertions.assertThat(unboxedItems).hasSize(4);
         unboxedItems.forEach(item -> assertThat(item).isOfAnyClassIn(AgedBrie.class, BackstagePass.class, Sulfuras.class, SomeItem.class));
     }
 

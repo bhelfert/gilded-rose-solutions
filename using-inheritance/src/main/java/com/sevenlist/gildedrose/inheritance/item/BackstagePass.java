@@ -1,6 +1,6 @@
-package com.sevenlist.gildedrose.item;
+package com.sevenlist.gildedrose.inheritance.item;
 
-import com.sevenlist.gildedrose.Item;
+import com.sevenlist.gildedrose.inheritance.Item;
 
 public class BackstagePass extends UnboxedItem {
 
