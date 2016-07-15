@@ -30,11 +30,11 @@ public class ItemsReceiptTest {
     }
 
     @Test(expected = RuntimeException.class)
-    public void throwsRuntimeExceptionWhenItemReceivedThatIsNotSoldByUs() throws Exception {
+    public void throwsRuntimeExceptionWhenItemReceivedThatDoesNotBelongsToSortiment() throws Exception {
         // given
-        Item[] boxedNotSoldByUsItem = { new Item("not sold by us", DOES_NOT_MATTER, DOES_NOT_MATTER) };
+        Item[] unknownItem = { new Item("not sold by us", DOES_NOT_MATTER, DOES_NOT_MATTER) };
 
         // when
-        new ItemsReceipt().unboxItems(boxedNotSoldByUsItem);
+        new ItemsReceipt().unboxItems(unknownItem);
     }
 }

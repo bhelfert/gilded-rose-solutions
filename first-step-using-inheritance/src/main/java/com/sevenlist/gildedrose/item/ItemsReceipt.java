@@ -11,13 +11,13 @@ import java.util.stream.Collectors;
 
 public class ItemsReceipt {
 
-    private Map<String, Class<? extends UnboxedItem>> itemsWeSell = new HashMap<>();
+    private Map<String, Class<? extends UnboxedItem>> sortiment = new HashMap<>();
 
     public ItemsReceipt() {
-        itemsWeSell.put("Aged Brie", AgedBrie.class);
-        itemsWeSell.put("Backstage passes to a TAFKAL80ETC concert", BackstagePass.class);
-        itemsWeSell.put("Sulfuras, Hand of Ragnaros", Sulfuras.class);
-        itemsWeSell.put("Some Item", SomeItem.class);
+        sortiment.put("Aged Brie", AgedBrie.class);
+        sortiment.put("Backstage passes to a TAFKAL80ETC concert", BackstagePass.class);
+        sortiment.put("Sulfuras, Hand of Ragnaros", Sulfuras.class);
+        sortiment.put("Some Item", SomeItem.class);
     }
 
     public List<UnboxedItem> unboxItems(Item[] items) {
@@ -26,10 +26,10 @@ public class ItemsReceipt {
 
     private UnboxedItem unboxItem(Item item) {
         try {
-            return itemsWeSell.get(item.name).getDeclaredConstructor(Item.class).newInstance(item);
+            return sortiment.get(item.name).getDeclaredConstructor(Item.class).newInstance(item);
         }
         catch (NullPointerException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException e) {
-            throw new RuntimeException("received item that we do not sell: " + item, e);
+            throw new RuntimeException("received item unknown to our sortiment: " + item, e);
         }
     }
 }
