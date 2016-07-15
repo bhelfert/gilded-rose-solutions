@@ -2,7 +2,7 @@ package com.sevenlist.gildedrose.item;
 
 import com.sevenlist.gildedrose.Item;
 
-public class BackstagePass extends AbstractItem {
+public class BackstagePass extends UnboxedItem {
 
     private static final int SIX_DAYS = 6;
     private static final int ELEVEN_DAYS = 11;

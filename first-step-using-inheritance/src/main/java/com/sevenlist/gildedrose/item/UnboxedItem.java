@@ -2,14 +2,14 @@ package com.sevenlist.gildedrose.item;
 
 import com.sevenlist.gildedrose.Item;
 
-public abstract class AbstractItem {
+public abstract class UnboxedItem {
 
     private static final int DEFAULT_MAX_QUALITY = 50;
 
     protected int sellIn;
     protected int quality;
 
-    public AbstractItem(Item item) {
+    public UnboxedItem(Item item) {
         sellIn = item.sellIn;
         quality = item.quality;
     }

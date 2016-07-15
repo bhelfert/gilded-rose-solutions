@@ -1,9 +1,9 @@
 package com.sevenlist.gildedrose;
 
-import com.sevenlist.gildedrose.item.AbstractItem;
+import com.sevenlist.gildedrose.item.UnboxedItem;
 import org.junit.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
 public class GildedRoseTest {
 
@@ -74,15 +74,15 @@ public class GildedRoseTest {
 
     private void assertNewSellInAndQuality(String itemName, int sellIn, int quality, int newSellIn, int newQuality) {
         // given
-        Item item = new Item(itemName, sellIn, quality);
-        GildedRose gildedRose = new GildedRose(new Item[] { item });
+        Item boxedItem = new Item(itemName, sellIn, quality);
+        GildedRose gildedRose = new GildedRose(new Item[] { boxedItem });
 
         // when
         gildedRose.updateQuality();
 
         // then
-        AbstractItem resultingItem = gildedRose.getItems().get(0);
-        assertThat(resultingItem.getSellIn()).isEqualTo(newSellIn);
-        assertThat(resultingItem.getQuality()).isEqualTo(newQuality);
+        UnboxedItem unboxedItem = gildedRose.getItems().get(0);
+        assertThat(unboxedItem.getSellIn()).isEqualTo(newSellIn);
+        assertThat(unboxedItem.getQuality()).isEqualTo(newQuality);
     }
 }

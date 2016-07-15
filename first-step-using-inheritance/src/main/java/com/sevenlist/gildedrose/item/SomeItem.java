@@ -2,7 +2,7 @@ package com.sevenlist.gildedrose.item;
 
 import com.sevenlist.gildedrose.Item;
 
-public class SomeItem extends AbstractItem {
+public class SomeItem extends UnboxedItem {
 
     private static final int DEFAULT_MIN_QUALITY = 0;
 

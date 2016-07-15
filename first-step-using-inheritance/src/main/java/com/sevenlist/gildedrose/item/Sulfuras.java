@@ -2,7 +2,7 @@ package com.sevenlist.gildedrose.item;
 
 import com.sevenlist.gildedrose.Item;
 
-public class Sulfuras extends AbstractItem {
+public class Sulfuras extends UnboxedItem {
 
     public Sulfuras(Item item) {
         super(item);
