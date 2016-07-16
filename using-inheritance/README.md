@@ -15,4 +15,6 @@ Advantages of this implementation:
 Some disadvantages:
 * Inheritance with tight coupling - not nice
 * Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
+* New items need to be configured manually in ItemsReceipt
 * Getter methods in production code exist only for testing purposes
+* ItemsReceipt has two responsibilities: managing the sortiment and unboxing items
