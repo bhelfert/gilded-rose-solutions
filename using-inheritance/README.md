@@ -18,4 +18,3 @@ Some disadvantages:
 * Code structure eventually only scales limited when adding new item types
 * Getter methods in production code exist only for testing purposes
 * Strange: an UnboxedItem does not have a name
-* Naming of test methods is not perfect/consistent

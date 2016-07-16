@@ -11,17 +11,17 @@ public class StandardItemTest extends UnboxedItemTestCase {
     }
 
     @Test
-    public void standard_item_quality_degrades() throws Exception {
+    public void quality_degrades_while_aging() throws Exception {
         assertNewSellInAndQuality(StandardItem.NAME, 1, 1, 0, 0);
     }
 
     @Test
-    public void standard_item_quality_degrades_twice_as_fast_when_sellin_has_passed() throws Exception {
+    public void quality_degrades_twice_as_fast_when_sellin_has_passed() throws Exception {
         assertNewSellInAndQuality(StandardItem.NAME, -1, 2, -2, 0);
     }
 
     @Test
-    public void standard_item_quality_is_0_at_min() throws Exception {
+    public void quality_is_0_at_min() throws Exception {
         assertNewSellInAndQuality(StandardItem.NAME, 1, 0, 0, 0);
     }
 }

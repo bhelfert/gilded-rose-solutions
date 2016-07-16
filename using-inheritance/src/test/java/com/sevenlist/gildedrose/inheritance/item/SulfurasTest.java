@@ -11,7 +11,7 @@ public class SulfurasTest extends UnboxedItemTestCase {
     }
 
     @Test
-    public void sulfuras_will_never_be_sold() throws Exception {
+    public void is_never_sold() throws Exception {
         assertNewSellInAndQuality(Sulfuras.NAME, 20, 80, 20, 80);
     }
 }

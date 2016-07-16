@@ -11,27 +11,27 @@ public class BackstagePassTest extends UnboxedItemTestCase {
     }
 
     @Test
-    public void backstage_passes_quality_is_50_at_max() throws Exception {
+    public void quality_is_50_at_max() throws Exception {
         assertNewSellInAndQuality(BackstagePass.NAME, 1, 50, 0, 50);
     }
 
     @Test
-    public void backstage_passes_quality_increases_while_aging() throws Exception {
+    public void quality_increases_while_aging() throws Exception {
         assertNewSellInAndQuality(BackstagePass.NAME, 11, 49, 10, 50);
     }
 
     @Test
-    public void backstage_passes_quality_increases_by_2_when_sellin_is_between_6_and_10_days() throws Exception {
+    public void quality_increases_by_2_when_sellin_is_between_6_and_10_days() throws Exception {
         assertNewSellInAndQuality(BackstagePass.NAME, 10, 48, 9, 50);
     }
 
     @Test
-    public void backstage_passes_quality_increases_by_3_when_sellin_is_in_5_days_or_less() throws Exception {
+    public void quality_increases_by_3_when_sellin_is_in_5_days_or_less() throws Exception {
         assertNewSellInAndQuality(BackstagePass.NAME, 5, 47, 4, 50);
     }
 
     @Test
-    public void backstage_passes_quality_is_0_after_sellin_has_passed() throws Exception {
+    public void quality_is_0_after_sellin_has_passed() throws Exception {
         assertNewSellInAndQuality(BackstagePass.NAME, -1, 20, -2, 0);
     }
 }
