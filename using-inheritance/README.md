@@ -1,10 +1,11 @@
 Solution strategy:
 * Refactor if-else chains with polymorphism, using inheritance
 
-Domain/implementation ideas and devised requirements:
+Domain/implementation ideas and devised requirements/restrictions:
 * GildedRose shall be stateful as it owns the items that are for sale
 * The Item class (that we are not allowed to change) represents items that are "boxed"
 * These items are "unboxed" in our ItemReceipt where we check if the item belongs to our sortiment
+* For writing tests only JUnit (with AssertJ) is allowed to be used - not a nice BDD framework 
 
 Advantages of this implementation:
 * Easy to implement
