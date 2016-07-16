@@ -3,11 +3,11 @@ package com.sevenlist.gildedrose.inheritance.item;
 import com.sevenlist.gildedrose.inheritance.Item;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ItemsReceipt {
 
@@ -21,7 +21,7 @@ public class ItemsReceipt {
     }
 
     public List<UnboxedItem> unboxItems(Item[] items) {
-        return Arrays.stream(items).map(this::unboxItem).collect(Collectors.toList());
+        return Stream.of(items).map(this::unboxItem).collect(Collectors.toList());
     }
 
     private UnboxedItem unboxItem(Item item) {
