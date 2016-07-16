@@ -1,7 +1,7 @@
 package com.sevenlist.gildedrose.inheritance;
 
-import com.sevenlist.gildedrose.inheritance.item.ItemsReceipt;
-import com.sevenlist.gildedrose.inheritance.item.UnboxedItem;
+import com.sevenlist.gildedrose.inheritance.unboxeditem.ItemsReceipt;
+import com.sevenlist.gildedrose.inheritance.unboxeditem.UnboxedItem;
 
 import java.util.Collections;
 import java.util.List;

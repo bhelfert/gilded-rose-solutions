@@ -1,4 +1,4 @@
-package com.sevenlist.gildedrose.inheritance.item;
+package com.sevenlist.gildedrose.inheritance.unboxeditem;
 
 import com.sevenlist.gildedrose.inheritance.Item;
 
@@ -29,7 +29,7 @@ public class ItemsReceipt {
             return sortiment.get(item.name).getDeclaredConstructor(Item.class).newInstance(item);
         }
         catch (NullPointerException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException e) {
-            throw new RuntimeException("received item unknown to our sortiment: " + item, e);
+            throw new RuntimeException("received unboxeditem unknown to our sortiment: " + item, e);
         }
     }
 }

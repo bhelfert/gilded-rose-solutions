@@ -1,8 +1,8 @@
 package com.sevenlist.gildedrose.inheritance;
 
-import com.sevenlist.gildedrose.inheritance.item.AgedBrie;
-import com.sevenlist.gildedrose.inheritance.item.BackstagePass;
-import com.sevenlist.gildedrose.inheritance.item.UnboxedItem;
+import com.sevenlist.gildedrose.inheritance.unboxeditem.AgedBrie;
+import com.sevenlist.gildedrose.inheritance.unboxeditem.BackstagePass;
+import com.sevenlist.gildedrose.inheritance.unboxeditem.UnboxedItem;
 import org.junit.Test;
 
 import java.util.List;

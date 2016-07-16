@@ -1,4 +1,4 @@
-package com.sevenlist.gildedrose.inheritance.item;
+package com.sevenlist.gildedrose.inheritance.unboxeditem;
 
 import com.sevenlist.gildedrose.inheritance.Item;
 
