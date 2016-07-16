@@ -4,7 +4,7 @@ Solution strategy:
 Domain/implementation ideas and devised requirements/restrictions:
 * GildedRose shall be stateful as it owns the items that are for sale
 * The Item class (that we are not allowed to change) represents items that are "boxed"
-* These items are "unboxed" in our ItemReceipt where we check if the item belongs to our sortiment
+* These items are "unboxed" in our ItemsReceipt where we check if the item belongs to our sortiment
 * For writing tests only JUnit (with AssertJ) is allowed to be used - not a nice BDD framework 
 
 Advantages of this implementation:
@@ -15,6 +15,4 @@ Advantages of this implementation:
 Some disadvantages:
 * Inheritance with tight coupling - not nice
 * Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
-* Code structure eventually only scales limited when adding new item types
 * Getter methods in production code exist only for testing purposes
-* Strange: an UnboxedItem does not have a name
