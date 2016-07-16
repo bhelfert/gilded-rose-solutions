@@ -30,6 +30,6 @@
     </dependencies>
 
     <modules>
-        <module>using-inheritance</module>
+        <module>using-inheritance-and-simple-itemsreceipt</module>
     </modules>
 </project>
