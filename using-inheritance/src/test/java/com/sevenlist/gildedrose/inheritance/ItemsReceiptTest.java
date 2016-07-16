@@ -1,6 +1,6 @@
-package com.sevenlist.gildedrose.inheritance.unboxeditem;
+package com.sevenlist.gildedrose.inheritance;
 
-import com.sevenlist.gildedrose.inheritance.Item;
+import com.sevenlist.gildedrose.inheritance.unboxeditem.*;
 import org.junit.Test;
 
 import java.util.List;
