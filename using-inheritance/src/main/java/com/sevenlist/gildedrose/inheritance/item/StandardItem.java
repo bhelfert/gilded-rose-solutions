@@ -2,11 +2,11 @@ package com.sevenlist.gildedrose.inheritance.item;
 
 import com.sevenlist.gildedrose.inheritance.Item;
 
-public class SomeItem extends UnboxedItem {
+public class StandardItem extends UnboxedItem {
 
     private static final int DEFAULT_MIN_QUALITY = 0;
 
-    public SomeItem(Item boxedItem) {
+    public StandardItem(Item boxedItem) {
         super(boxedItem);
     }
 

@@ -19,7 +19,7 @@ public class ItemsReceiptTest {
                 new Item("Aged Brie", DOES_NOT_MATTER, DOES_NOT_MATTER),
                 new Item("Backstage passes to a TAFKAL80ETC concert", DOES_NOT_MATTER, DOES_NOT_MATTER),
                 new Item("Sulfuras, Hand of Ragnaros", DOES_NOT_MATTER, DOES_NOT_MATTER),
-                new Item("Some Item", DOES_NOT_MATTER, DOES_NOT_MATTER)
+                new Item("Standard Item", DOES_NOT_MATTER, DOES_NOT_MATTER)
         };
 
         // when
@@ -27,7 +27,7 @@ public class ItemsReceiptTest {
 
         // then
         Assertions.assertThat(unboxedItems).hasSize(4);
-        unboxedItems.forEach(item -> assertThat(item).isOfAnyClassIn(AgedBrie.class, BackstagePass.class, Sulfuras.class, SomeItem.class));
+        unboxedItems.forEach(item -> assertThat(item).isOfAnyClassIn(AgedBrie.class, BackstagePass.class, Sulfuras.class, StandardItem.class));
     }
 
     @Test(expected = RuntimeException.class)

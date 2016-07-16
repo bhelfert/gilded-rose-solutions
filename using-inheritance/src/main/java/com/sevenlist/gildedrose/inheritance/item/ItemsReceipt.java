@@ -17,7 +17,7 @@ public class ItemsReceipt {
         sortiment.put("Aged Brie", AgedBrie.class);
         sortiment.put("Backstage passes to a TAFKAL80ETC concert", BackstagePass.class);
         sortiment.put("Sulfuras, Hand of Ragnaros", Sulfuras.class);
-        sortiment.put("Some Item", SomeItem.class);
+        sortiment.put("Standard Item", StandardItem.class);
     }
 
     public List<UnboxedItem> unboxItems(Item[] items) {
