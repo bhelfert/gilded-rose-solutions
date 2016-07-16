@@ -14,10 +14,10 @@ public class ItemsReceipt {
     private Map<String, Class<? extends UnboxedItem>> sortiment = new HashMap<>();
 
     public ItemsReceipt() {
-        sortiment.put("Aged Brie", AgedBrie.class);
-        sortiment.put("Backstage passes to a TAFKAL80ETC concert", BackstagePass.class);
-        sortiment.put("Sulfuras, Hand of Ragnaros", Sulfuras.class);
-        sortiment.put("Standard Item", StandardItem.class);
+        sortiment.put(AgedBrie.NAME, AgedBrie.class);
+        sortiment.put(BackstagePass.NAME, BackstagePass.class);
+        sortiment.put(StandardItem.NAME, StandardItem.class);
+        sortiment.put(Sulfuras.NAME, Sulfuras.class);
     }
 
     public List<UnboxedItem> unboxItems(Item[] items) {

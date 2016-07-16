@@ -1,5 +1,7 @@
 package com.sevenlist.gildedrose.inheritance;
 
+import com.sevenlist.gildedrose.inheritance.item.AgedBrie;
+import com.sevenlist.gildedrose.inheritance.item.BackstagePass;
 import com.sevenlist.gildedrose.inheritance.item.UnboxedItem;
 import org.junit.Test;
 
@@ -9,14 +11,11 @@ import static org.assertj.core.api.Assertions.*;
 
 public class GildedRoseTest {
 
-    private static final String AGED_BRIE = "Aged Brie";
-    private static final String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
-
     @Test
     public void updatesQuality() {
         // given
-        Item agedBrieBoxed = new Item(AGED_BRIE, 1, 10);
-        Item backstagePassesBoxed = new Item(BACKSTAGE_PASSES, 1, 10);
+        Item agedBrieBoxed = new Item(AgedBrie.NAME, 1, 10);
+        Item backstagePassesBoxed = new Item(BackstagePass.NAME, 1, 10);
         Item[] boxedItems = new Item[] { agedBrieBoxed, backstagePassesBoxed };
         GildedRose gildedRose = new GildedRose(boxedItems);
 

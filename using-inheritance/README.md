@@ -16,7 +16,6 @@ Some disadvantages:
 * Inheritance with tight coupling - not nice
 * Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
 * Code structure eventually only scales limited when adding new item types
-* Item names are not yet constants/enums
 * Getter methods in production code exist only for testing purposes
 * Strange: an UnboxedItem does not have a name
 * Naming of test methods is not perfect/consistent

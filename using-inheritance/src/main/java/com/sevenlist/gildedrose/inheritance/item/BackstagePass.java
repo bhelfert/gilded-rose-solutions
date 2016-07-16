@@ -4,6 +4,8 @@ import com.sevenlist.gildedrose.inheritance.Item;
 
 public class BackstagePass extends UnboxedItem {
 
+    public static final String NAME = "Backstage passes to a TAFKAL80ETC concert";
+
     private static final int SIX_DAYS = 6;
     private static final int ELEVEN_DAYS = 11;
 

@@ -9,7 +9,7 @@ public abstract class UnboxedItemTestCase {
     protected void assertNewSellInAndQuality(String itemName, int sellIn, int quality, int newSellIn, int newQuality) {
         // given
         Item boxedItem = new Item(itemName, sellIn, quality);
-        UnboxedItem unboxedItem = unboxedItem(boxedItem);
+        UnboxedItem unboxedItem = unboxItem(boxedItem);
 
         // when
         unboxedItem.updateSellInAndQuality();
@@ -19,5 +19,5 @@ public abstract class UnboxedItemTestCase {
         assertThat(unboxedItem.getQuality()).isEqualTo(newQuality);
     }
 
-    protected abstract UnboxedItem unboxedItem(Item boxedItem);
+    protected abstract UnboxedItem unboxItem(Item boxedItem);
 }

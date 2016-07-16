@@ -4,6 +4,8 @@ import com.sevenlist.gildedrose.inheritance.Item;
 
 public class Sulfuras extends UnboxedItem {
 
+    public static final String NAME = "Sulfuras, Hand of Ragnaros";
+
     public Sulfuras(Item boxedItem) {
         super(boxedItem);
     }
