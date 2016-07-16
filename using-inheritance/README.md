@@ -1,5 +1,5 @@
 Solution strategy:
-* Refactor if-else chains with polymorphism, using inheritance
+* Refactor if-else chains by using polymorphism with inheritance
 
 Domain/implementation ideas and devised requirements/restrictions:
 * GildedRose shall be stateful as it owns the items that are for sale
