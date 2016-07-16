@@ -7,14 +7,14 @@ Domain/implementation ideas and devised requirements:
 * These items are "unboxed" in our ItemReceipt where we check if the item belongs to our sortiment
 
 Advantages of this implementation:
-* easy to implement
-* refactoring did not break the implementation at any point
-* wins already a lot of ground
+* Easy to implement
+* Refactoring did not break the implementation at any point
+* Wins already a lot of ground
 
 Some disadvantages:
-* inheritance with tight coupling - not nice
-* logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
-* code structure eventually only scales limited when adding new item types
-* item names are not yet constants/enums
-* method GildedRose.getUnboxedItems() in production code exists only for testing purposes
-* naming of test methods is not perfect/consistent
+* Inheritance with tight coupling - not nice
+* Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
+* Code structure eventually only scales limited when adding new item types
+* Item names are not yet constants/enums
+* Method GildedRose.getUnboxedItems() in production code exists only for testing purposes
+* Naming of test methods is not perfect/consistent
