@@ -1,4 +1,4 @@
-package com.sevenlist.gildedrose.inheritance;
+package com.sevenlist.gildedrose.inheritance.simple;
 
 public class Item {
 

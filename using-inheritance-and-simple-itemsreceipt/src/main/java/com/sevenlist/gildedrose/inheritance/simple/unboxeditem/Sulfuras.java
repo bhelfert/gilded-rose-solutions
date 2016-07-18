@@ -1,6 +1,6 @@
-package com.sevenlist.gildedrose.inheritance.unboxeditem;
+package com.sevenlist.gildedrose.inheritance.simple.unboxeditem;
 
-import com.sevenlist.gildedrose.inheritance.Item;
+import com.sevenlist.gildedrose.inheritance.simple.Item;
 
 public class Sulfuras extends UnboxedItem {
 

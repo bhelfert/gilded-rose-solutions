@@ -1,6 +1,6 @@
-package com.sevenlist.gildedrose.inheritance;
+package com.sevenlist.gildedrose.inheritance.simple;
 
-import com.sevenlist.gildedrose.inheritance.unboxeditem.*;
+import com.sevenlist.gildedrose.inheritance.simple.unboxeditem.*;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
