@@ -31,5 +31,6 @@
 
     <modules>
         <module>using-inheritance-and-simple-itemsreceipt</module>
+        <module>using-inheritance-and-sophisticated-itemsreceipt</module>
     </modules>
 </project>

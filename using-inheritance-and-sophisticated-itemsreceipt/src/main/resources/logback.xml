@@ -1,0 +1,13 @@
+<configuration scan="false">
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%date{HH:mm:ss}] %-22.-22logger{0} %.-1level %message%n%exception</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="org.reflections" level="WARN"/>
+
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </root>
+</configuration>
