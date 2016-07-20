@@ -2,9 +2,6 @@ package com.sevenlist.gildedrose.inheritance.sophisticated.unboxeditem;
 
 import com.sevenlist.gildedrose.inheritance.sophisticated.Item;
 
-/**
- * Subclasses need to add a "public static final String NAME" constant to be automatically be added to the sortiment.
- */
 public abstract class AbstractUnboxedItem implements UnboxedItem {
 
     private static final int DEFAULT_MAX_QUALITY = 50;
