@@ -2,13 +2,14 @@ package com.sevenlist.gildedrose.inheritance.sophisticated.sortiment;
 
 import com.sevenlist.gildedrose.inheritance.sophisticated.unboxeditem.UnboxedItem;
 import io.atlassian.fugue.Pair;
+import org.reflections.Reflections;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
-import org.reflections.Reflections;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class AutomaticSortiment implements Sortiment {
 
@@ -17,7 +18,7 @@ public class AutomaticSortiment implements Sortiment {
     private final Map<String, Class<? extends UnboxedItem>> itemNameToClass = autoBuildSortiment();
 
     private Map<String, Class<? extends UnboxedItem>> autoBuildSortiment() {
-        Set<Class<? extends UnboxedItem>> unboxedItemClasses = getUnboxedItemTypesInClasspath();
+        Set<Class<? extends UnboxedItem>> unboxedItemClasses = getUnboxedItemClassesInClasspath();
         Map<String, Class<? extends UnboxedItem>> sortiment = unboxedItemClasses.stream()
                 .map(clazz -> Pair.pair(getStaticNameField(clazz), clazz))
                 .filter(pair -> pair.left().isPresent())
@@ -26,7 +27,7 @@ public class AutomaticSortiment implements Sortiment {
         return sortiment;
     }
 
-    private Set<Class<? extends UnboxedItem>> getUnboxedItemTypesInClasspath() {
+    private Set<Class<? extends UnboxedItem>> getUnboxedItemClassesInClasspath() {
         Reflections reflections = new Reflections("com.sevenlist.gildedrose.inheritance.sophisticated.unboxeditem");
         return reflections.getSubTypesOf(UnboxedItem.class);
     }
