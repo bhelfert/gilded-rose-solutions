@@ -13,8 +13,8 @@ Advantages of this implementation:
 * Wins already a lot of ground
 
 Some disadvantages:
-* Inheritance with tight coupling - not nice
-* Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
+* Implementation inheritance violates encapsulation
+* Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric; see e.g. hasMinQuality() / decreaseQuality() in StandardItem
 * New items need to be configured manually in ItemsReceipt
 * Getter methods in production code exist only for testing purposes
 * GildedRose is coupled to ItemsReceipt --> GildedRoseTest tests the updateSellInAndQuality() methods indirectly again -

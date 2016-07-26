@@ -14,8 +14,8 @@ Advantages of this implementation:
 * ItemsReceipt and Sortiment are now decoupled
 
 Some disadvantages:
-* Addtional complexity (Strategy pattern, usage of Reflection, additional libraries, mock tests) does not pay-off for
+* Additional complexity (Strategy pattern, usage of Reflection, additional libraries, mock tests) does not pay-off for
 such a small project -> approx. +63% LOC!
-* Inheritance with tight coupling - not nice
-* Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric
+* Implementation inheritance violates encapsulation
+* Logic scattered across inheritance hierarchy / item types --> unbalanced, asymmetric; see e.g. hasMinQuality() / decreaseQuality() in StandardItem
 * Getter methods in production code exist only for testing purposes
